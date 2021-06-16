@@ -12,7 +12,7 @@ body {
 }
 
 
-#phone{
+#phone {
     background-color: #444;
     display: flex;
     align-items: center;
@@ -23,11 +23,10 @@ body {
     height: 640px;
     width: 320px;
     box-shadow: 0px 0px 10px  black;
-   
 }
 
 
-.screen{
+.screen {
     background-image: url(../img/wallpaper.jpg);
     display: flex;
     max-width: 100%;
@@ -35,12 +34,12 @@ body {
     background-color: rgb(20, 20, 20);
     width: 290px;
     height: 580px;
-    /* align-items: center; */
     justify-content: space-around;
     flex-direction: column;
 }
-    
-    
+ 
+
+/* Icones da barra superior */
 .top-bar {
     display: flex;
     flex-wrap: nowrap;
@@ -48,24 +47,26 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
-    padding-top: 4px;
 } 
 
 
 .battery-full {
     color: white;
     display: flex;
-    padding-left: 2px;
-    
+    padding: 3px 2px; 
+
 }
 
 
 .network_wifi {
     color: white;
     display: flex;
+    padding: 3px 2px;
+
 }
 
 
+/* Botões */
 .buttons {
     display: flex;
     flex-direction: row;
@@ -74,6 +75,7 @@ body {
     align-content: flex-end;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 
@@ -82,20 +84,18 @@ body {
 	border-radius:28px;
 	cursor:pointer;
 	color:white;
-	/* padding:2px 2px; */
-    margin: 5px 30px;
+    padding: 5px 34px;
+    margin: 2px 2px;
     align-items: center;
-    -webkit-transition-duration: 0.5s; /* Safari */
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-}
 
-/* .task-btn:hover{
-    background-color:rgba(255, 255, 255, 0);
-} */
+}
 
 
 .task-btn:active {
     background-color:rgba(241, 241, 241, 0.719);
+
 }
 
 
@@ -104,21 +104,18 @@ body {
 	border-radius:28px;
 	cursor:pointer;
 	color:white;
-    /* padding:2px 2px; */
-    margin: 5px 30px;
+    padding: 5px 34px;
+    margin: 2px 2px;
     align-items: center;
-    -webkit-transition-duration: 0.5s; /* Safari */
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+
 }
-
-/* .home-btn:hover{
-    background-color:rgba(255, 255, 255, 0);
-} */
-
 
 
 .home-btn:active {
     background-color:rgba(241, 241, 241, 0.719);
+
 }
 
 
@@ -127,18 +124,126 @@ body {
 	border-radius:28px;
 	cursor:pointer;
 	color:white;
-    /* padding:2px 2px; */
-    margin: 5px 30px;
+    padding: 5px 34px;
+    margin: 2px 2px;
     align-items: center;
-    -webkit-transition-duration: 0.5s; /* Safari */
+    -webkit-transition-duration: 0.5s; 
     transition-duration: 0.5s;
+    
 }
-
-/* .back-btn:hover{
-    background-color:rgba(255, 255, 255, 0);
-} */
 
 
 .back-btn:active {
     background-color:rgba(241, 241, 241, 0.719);
+
+}
+
+
+/* Apps */
+.apps {
+    background-color: rgba(0, 0, 0, 0);
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: cornsilk;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+.app0 {
+    background-image: url(../img/whatsapp-icon.png);
+    background-repeat: no-repeat;
+    size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 12px 14px;
+    margin: 2px 13px;
+    padding-right: 35px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.app0:hover{
+    background-color:rgba(255, 255, 255, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    align-items: center;
+
+} 
+
+
+.app1 {
+    background-image: url(../img/spotify-icon.png);
+    background-repeat: no-repeat;
+    size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px;
+    margin: 2px 13px;
+    padding-right: 35px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.app2 {
+    background-image: url(../img/steam-icon.png);
+    background-repeat: no-repeat;
+    size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px;
+    margin: 2px 13px;
+    padding-right: 35px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.app3 {
+    background-image: url(../img/discord-icon.png);
+    background-repeat: no-repeat;
+    size: 20px;
+    padding: 13px;
+    margin: 2px 13px;
+    padding-right: 35px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.widgets {
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+
+#time {
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 3em;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
 }
